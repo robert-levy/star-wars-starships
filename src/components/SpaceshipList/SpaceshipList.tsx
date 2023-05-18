@@ -6,21 +6,25 @@ import Card from "../Card/Card";
 
 const SpaceshipList = () => {
   const { data, nextPage } = useData();
-  const [isLoading, setIsLoading] = useState(false)
-
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleOnClick = () => {
-    setIsLoading(!isLoading)
-  }
+    setIsLoading(!isLoading);
+  };
 
   return (
     <Wrapper>
       {data.map((spaceship: IStarshipData, index: number) => (
         <Card key={index} data={spaceship} />
       ))}
-      <LoadMoreButton onClick={handleOnClick} className={isLoading ? 'loading':''}>
-        {!isLoading && <>Load more ...</>}
-      </LoadMoreButton>
+      {nextPage && (
+        <LoadMoreButton
+          onClick={handleOnClick}
+          className={isLoading ? "loading" : ""}
+        >
+          {!isLoading && <>Load more ...</>}
+        </LoadMoreButton>
+      )}
     </Wrapper>
   );
 };

@@ -1,4 +1,4 @@
-import React, {
+import  {
   useState,
   useEffect,
   createContext,
@@ -13,7 +13,7 @@ interface IStateContext {
   data: IStarshipData[];
   nextPage: string | null;
 }
-type StateContextType = IStateContext | null;
+type StateContextType = IStateContext | null ;
 
 export const StateContext = createContext<StateContextType>(null);
 
@@ -46,10 +46,10 @@ const Provider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export const useData = () => {
+export const useData = (): IStateContext  => {
   const context = useContext(StateContext);
-  if (context === undefined) {
-    throw new Error("Context must be used within a Provider");
+  if (!context) {
+    throw new Error("useData must be used within a Provider");
   }
   return context;
 };

@@ -1,4 +1,3 @@
-import React from "react";
 import { Wrapper,Ul, Li } from "./FooterStyled";
 
 const Footer = () => {
