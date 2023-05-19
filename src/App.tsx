@@ -5,6 +5,7 @@ import Header from './components/Header/Header'
 import SpaceshipList from "./components/SpaceshipList/SpaceshipList";
 import Footer from "./components/Footer/Footer";
 import spaceBackground from './assets/space-bg.jpg'
+
 const StylingWrapper = styled.div`
   display: flex;
   flex-direction: column;
