@@ -6,5 +6,4 @@ describe('Proivder tests', () => {
         const children = <div>test</div>
         render(<Provider children={children}/>)
     });
-    
 });

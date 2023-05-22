@@ -10,9 +10,7 @@ export const Wrapper = styled.div`
   backdrop-filter: blur(4px);
   text-align:left;
   transition: transform 0.3s ease-in-out;
-  min-width: 500px;
   max-width: 600px;
-  min-height: 200px;
   &:hover {
     transform: translateY(-4px);
   }
@@ -25,6 +23,16 @@ export const LeftSection = styled.div`
 export const RightSection = styled.div`
   width: 50%;
 `;
+
+export const SpaceshipImg = styled.img`
+width: 90%;
+height: 100%
+@media (max-width: 768px) {
+  height: 50%;
+  width: 100%;
+
+`
+
 export const SpaceshipName = styled.h1`
   font-family: "Roboto", sans-serif;
   font-size: 24px;
@@ -39,8 +47,6 @@ font-size: 16px;
 color: #fee84c;
 `
 
-export const Img = styled.img`
-    position: relative;
-    left: 60%;
-    bottom: 40%;
+export const ApperancesIcon = styled.img`
+    
     `
