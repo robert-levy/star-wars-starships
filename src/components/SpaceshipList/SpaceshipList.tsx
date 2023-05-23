@@ -5,11 +5,11 @@ import { IStarshipData } from "../../interfaces";
 import Card from "../Card/Card";
 
 const SpaceshipList = () => {
-  const { data, nextPage } = useData();
+  const { data, nextPage, setApiCall, apiCall } = useData();
   const [isLoading, setIsLoading] = useState(false);
 
   const handleOnClick = () => {
-    setIsLoading(!isLoading);
+    setApiCall(!apiCall)
   };
 
   return (
