@@ -23,6 +23,6 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src"],
+  "include": ["src","./setupTest.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -9,8 +9,8 @@ const SpaceshipList = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleOnClick = () => {
-    setApiCall(!apiCall)
-    setIsLoading(false) // quick fix for build
+    setApiCall(!apiCall);
+    setIsLoading(false); // quick fix for build
   };
 
   return (

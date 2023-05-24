@@ -5,7 +5,7 @@ import {
   SpaceshipName,
   SpaceshipSpec,
   ApperancesIcon,
-  SpaceshipImg
+  SpaceshipImg,
 } from "./CardStyled";
 import { IStarshipData } from "../../interfaces";
 
@@ -13,7 +13,7 @@ const Card = ({ data }: { data: IStarshipData }) => {
   //   console.log(data);
 
   return (
-    <Wrapper>
+    <Wrapper data-testid="card-component">
       <LeftSection>
         <SpaceshipImg src={data.image} alt="spaceship image" />
       </LeftSection>
@@ -22,7 +22,13 @@ const Card = ({ data }: { data: IStarshipData }) => {
         <SpaceshipSpec>Model: {data.model}</SpaceshipSpec>
         <SpaceshipSpec>Film Features: {data.films.length}</SpaceshipSpec>
         <SpaceshipSpec>Crew: {data.crew}</SpaceshipSpec>
-        {data.mostAppearancesIcon && <ApperancesIcon src={data.mostAppearancesIcon} width="100px" height="auto"/>}
+        {data.mostAppearancesIcon && (
+          <ApperancesIcon
+            src={data.mostAppearancesIcon}
+            width="100px"
+            height="auto"
+          />
+        )}
       </RightSection>
     </Wrapper>
   );
