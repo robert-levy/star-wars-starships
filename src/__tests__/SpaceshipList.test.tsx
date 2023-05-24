@@ -1,4 +1,4 @@
-import { render, waitFor, RenderResult } from "@testing-library/react";
+import { render, RenderResult } from "@testing-library/react";
 import { vi } from "vitest";
 import Provider from "../Provider/Provider";
 import { StateContext } from "../Provider/Provider";
