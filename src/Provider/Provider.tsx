@@ -47,7 +47,7 @@ const Provider = ({ children }: { children: ReactNode }) => {
       }
     };
     getData();
-  }, [apiCall]);
+  }, [apiCall, starShipsData]);
 
   return starShipsData ? (
     <StateContext.Provider value={starShipsData}>

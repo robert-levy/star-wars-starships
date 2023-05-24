@@ -1,6 +1,6 @@
 import shipImg from "./assets/starwars-ship.jpg";
 import mostAppearancesIcon from "./assets/most-appearances-icon.svg";
-import { IStarshipData, IDataResponse } from "./interfaces";
+import { IStarshipData } from "./interfaces";
 
 /**
  *
