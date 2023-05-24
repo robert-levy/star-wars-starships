@@ -10,6 +10,7 @@ const SpaceshipList = () => {
 
   const handleOnClick = () => {
     setApiCall(!apiCall)
+    setIsLoading(false) // quick fix for build
   };
 
   return (
